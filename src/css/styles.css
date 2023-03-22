@@ -201,6 +201,12 @@ main {
   border: 1px solid black;
   padding: 10px;
   border-radius: 7px;
+  transition: 0.2s;
+}
+
+.eventList:hover {
+  background-color: #8238FA;
+  color: #FFFFFF;
 }
 
 .nameEvent {
@@ -222,4 +228,11 @@ main {
   background-color: #8238FA;
   border-radius: 7px;
   padding: 5px;
+}
+
+.notFound {
+  background-color: #24292ec4;
+  color: #FFFFFF;
+  padding: 5px;
+  border-radius: 7px;
 }

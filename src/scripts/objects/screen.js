@@ -1,3 +1,8 @@
+
+/*
+Esse JS está com a responsabilidade criar o conteudo que vou mostrar na pagina. (conteudo HTML).
+ */
+
 const screen = {
     userProfile: document.querySelector('.profile-data'),
     renderUser(user){
@@ -28,6 +33,11 @@ const screen = {
                                                 <ul>${repositoriesItens}</ul>
                                             </div>`
         }
+        
+    },
+    renderNotFound(userName){
+        this.userProfile.innerHTML = `<h2>Opaaa! ❌</h2><br><br>
+                                      <h3>Usuario <span class="notFound">${userName}</span> não encontrado ou não existe! 😣😪</h>`
     }
 
     

@@ -1,6 +1,6 @@
 import { baseUrl, repositoriesQuantity } from '../variables.js'
 
-// pegando os arquivos da API do git ( Repositorios do usuario.)
+// buscando os arquivos da API do git ( Repositorios do usuario.)
 async function getRepositories(userName){
     const response = await fetch(`${baseUrl}/${userName}/repos?per_page=${repositoriesQuantity}`)
     return await response.json()

@@ -1,4 +1,4 @@
-// importando variavies de outro arquivo e dininuir meu codigo
+// importando variavies de outro arquivo para dividir responsabilidades
 import { baseUrl } from "../variables.js"
 
 // pegando os arquivos da API do git ( informações do usuario)

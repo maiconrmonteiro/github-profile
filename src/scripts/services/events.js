@@ -1,10 +1,16 @@
 import { baseUrl, repositoriesQuantity } from '../variables.js'
 
+
+// buscando os arquivos da API do git ( Repositorios do usuario.)
 async function getEvents(userName){
     const response = await fetch(`${baseUrl}/${userName}/events?per_page=${repositoriesQuantity}`)
     return await response.json()
 }
 
+/*
+A decisão de deixar essa funcionalidade separada e diferente das demais foi a manobra que tive que fazer para
+mostrar a mensagem correta de acordo com o type do evento.
+*/
 function events(userName){
     let eventList = ""
     

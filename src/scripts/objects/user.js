@@ -1,4 +1,7 @@
 
+/*
+Esse JS está com a responsabilidade de setar as informações que preciso do GITHUB.
+ */
 const user = {
     avatarUrl: '',
     name: '',
