@@ -1,5 +1,5 @@
 // importando variavies de outro arquivo e dininuir meu codigo
-import { baseUrl } from "./src/scripts/variables.js"
+import { baseUrl } from "../variables.js"
 
 // pegando os arquivos da API do git ( informações do usuario)
 async function getUser(userName) {

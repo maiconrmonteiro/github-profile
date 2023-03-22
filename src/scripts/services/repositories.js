@@ -1,4 +1,4 @@
-import { baseUrl, repositoriesQuantity } from "./src/scripts/variables.js"
+import { baseUrl, repositoriesQuantity } from '../variables.js'
 
 // pegando os arquivos da API do git ( Repositorios do usuario.)
 async function getRepositories(userName){
