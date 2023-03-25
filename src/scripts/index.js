@@ -14,7 +14,7 @@ Evento de click sendo aplicado no botão "buscar" da pagina com uma condição c
 document.getElementById('btn-search').addEventListener('click', () => {
     const userName = document.getElementById('input-search').value
         if(validadeInput(userName)) return
-           getUserData(userName)
+        getUserData(userName)
 })
 
 /*
@@ -27,7 +27,7 @@ document.getElementById('input-search').addEventListener('keyup', (e) => {
 
     if(isEnterKeyPressed){
         if(validadeInput(userName)) return
-           getUserData(userName)
+        getUserData(userName)
     }
 })
 
@@ -36,7 +36,7 @@ document.getElementById('input-search').addEventListener('keyup', (e) => {
 Funcção de validação caso o input esteja vazio, usando tando no botão na pagina ou enter do telhado.
 */
 function validadeInput(userName){
-    if(userName.length == 0){
+    if(userName.length == 0 || userName == " "){
         alert('Prencha o campo com o nome do usuario!')
         return true
     }
@@ -53,7 +53,6 @@ async function getUserData(userName){
     const repositoriesResponse = await getRepositories(userName)
 
     if(userResponse.message === "Not Found"){
-        console.log('caiu aqui')
         screen.renderNotFound(userName)
         return
     }
