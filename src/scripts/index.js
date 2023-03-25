@@ -14,8 +14,7 @@ Evento de click sendo aplicado no botão "buscar" da pagina com uma condição c
 document.getElementById('btn-search').addEventListener('click', () => {
     const userName = document.getElementById('input-search').value
         if(validadeInput(userName)) return
-        getUserData(userName)
-    
+           getUserData(userName)
 })
 
 /*
@@ -27,10 +26,9 @@ document.getElementById('input-search').addEventListener('keyup', (e) => {
     const isEnterKeyPressed = key === 13
 
     if(isEnterKeyPressed){
-        validadeInput(userName)
-        getUserData(userName)
+        if(validadeInput(userName)) return
+           getUserData(userName)
     }
-    
 })
 
 
@@ -66,5 +64,4 @@ async function getUserData(userName){
     screen.renderUser(user)
 
     events(userName)
-
 }
